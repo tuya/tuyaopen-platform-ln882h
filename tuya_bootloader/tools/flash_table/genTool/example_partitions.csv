@@ -1,0 +1,9 @@
+# Name,         Type, SubType, Offset,  Size,       Offset,     Flags
+boot,           code, boot,         , 0x6000,       ,
+conf,           data, config,       , 0x800,       ,
+flash_table,    data, part_table,   , 0x800,       ,
+app,            code, app,          , 1100k,     256,
+ota,            data, ota,          , 672k,         ,
+
+
+

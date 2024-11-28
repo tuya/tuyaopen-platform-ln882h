@@ -1,0 +1,4 @@
+*.o
+*.d
+ln882h_os/output
+tuya_bootloader/build

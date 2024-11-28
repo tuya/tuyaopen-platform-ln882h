@@ -1,0 +1,44 @@
+
+config TOOLCHAIN_PATH
+    string "toolchain path"
+    default ""
+    ---help---
+    toolchain dir path
+
+config LD_SCRIPT_PATH
+    string "ld script path"
+    default ""
+    ---help---
+    ld script path
+
+config PLATFORM_COMPILE_PARAMETERS
+    string "compile parameter file path"
+    default ""
+    ---help---
+    "compile parameters"
+
+config TUYA_CONFIG_ADDRESS
+    hex "set config address"
+    default 0x00
+    ---help---
+    set config address
+
+config BOOT_HEAP_SIZE
+    int "heap size"
+    default 65536
+    ---help---
+    "heap for malloc, default size = 64k"
+
+config ENABLE_DEBUG
+    bool "enable debug"
+    default y
+    ---help---
+    enable log output
+
+config FW_VERIFY_MODE_SIGNATURE
+    bool "enable signature check"
+    default n
+    ---help---
+    signature stored in ota file and after ota, boot write the fw signature to the end of app partition.
+
+

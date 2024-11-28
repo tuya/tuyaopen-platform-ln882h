@@ -1,0 +1,11 @@
+#
+# Automatically generated file; DO NOT EDIT.
+# Configuration
+#
+CONFIG_TOOLCHAIN_PATH="../../toolchain/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi"
+CONFIG_LD_SCRIPT_PATH="port/platform/example_platform.ld"
+CONFIG_PLATFORM_COMPILE_PARAMETERS="port/platform/example_platform.mk"
+CONFIG_TUYA_CONFIG_ADDRESS=0x6000
+CONFIG_BOOT_HEAP_SIZE=102400
+CONFIG_ENABLE_DEBUG=y
+# CONFIG_FW_VERIFY_MODE_SIGNATURE is not set

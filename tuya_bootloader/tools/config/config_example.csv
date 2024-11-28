@@ -1,0 +1,5 @@
+#key,               value
+flash_table,    6800
+ate_address,    0x18000
+uart_baudrate,  0xE1000
+

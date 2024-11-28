@@ -1,0 +1,59 @@
+
+======================================================================
+
+flash table define:
+
+name    type    subtype    offset    size    flags
+
+name: table name
+type: table type, data/app/lib ???
+subtype:
+        code -- |
+                |-- boot
+                |-- app
+                |-- ate
+
+        data -- |
+                |-- factory
+                |-- ota
+                |-- tuya_uf
+                |-- tuya_key
+                |-- tuya_kv
+                |-- tuya_cfg
+                |-- tuya_ext
+                |-- undefined
+
+        lib --  |
+                |-- flash driver
+
+offset: flash section start address, if not defined, default
+size: flash section size
+flag: encrypt or not
+
+======================================================================
+
+struct table_info {
+    uint8_t magic[2];
+    uint8_t type;
+    uint8_t subtype;
+    uint32_t ofs;
+    uint32_t size;
+    char name[16];
+    uint32_t flag;
+};
+
+======================================================================
+
+[flash_table_item_1]
+[flash_table_item_2]
+[flash_table_item_3]
+[flash_table_item_4]
+[flash_table_item_5]
+[flash_table_item_6]
+[flash_table_item_7]
+...
+[flash_table_item_N]
+[check sum]
+[padding <0xFF>]
+
+
